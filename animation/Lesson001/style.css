@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.box {
+    background-color: #dbedf0;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.fade-in{
+   animation-name: fadeIn;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
+   opacity: 0; 
+}
+
+@keyframes fadeIn {
+    from {
+        background: #0000ff;
+        opacity: 0;
+ }
+
+    to{
+        background: #dbedf0;
+        opacity: 1;
+ }
+}
+
+.fade-down{
+    animation-name: fadedown;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+ }
+ 
+ @keyframes fadedown {
+     from {
+         background: #0000ff;
+         opacity: 0;
+         transform: translateY(-100px);
+  }
+ 
+     to{
+         background: #dbedf0;
+         opacity: 1;
+         transform: translateY(0px);
+  }
+ }
+
+.fade-up{
+    animation-name: fadeup;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+ }
+ 
+ @keyframes fadeup {
+     from {
+         background: #0000ff;
+         opacity: 0;
+         transform: translateY(100px);
+  }
+ 
+     to{
+         background: #dbedf0;
+         opacity: 1;
+         transform: translateY(0px);
+  }
+ }
+.fade-migi{
+    animation-name: fademigi;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+ }
+ 
+ @keyframes fademigi {
+     from {
+         background: #0000ff;
+         opacity: 0;
+         transform: translateX(100px);
+  }
+ 
+     to{
+         background: #dbedf0;
+         opacity: 1;
+         transform: translateX(0px);
+  }
+ }
+.fade-hidari{
+    animation-name: fadehidari;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0; 
+ }
+ 
+ @keyframes fadehidari {
+     from {
+         background: #0000ff;
+         opacity: 0;
+         transform: translateX(-100px);
+  }
+ 
+     to{
+         background: #dbedf0;
+         opacity: 1;
+         transform: translateX(0px);
+  }
+ }
