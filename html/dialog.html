@@ -2,18 +2,17 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dialog Tag</title>
 </head>
 <body>
   <dialog id="dialog">
-   <div id="dialogwrap">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/F-v09d53Yag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <button id="close">CLOSE</button>
-   </div>
+    <div id="dialogWrap">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/aJ7N3lzHlIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button id="close">CLOSE</button>
+    </div>
   </dialog>
   <button id="open">OPEN</button>
-
 
   <script>
     let open = document.getElementById("open");
@@ -27,7 +26,7 @@
       dialog.close();
     });
     dialog.addEventListener("click", (e) => {
-      if (e.target.closest("#dialogwrap") == null) {
+      if (e.target.closest("#dialogWrap") == null) {
         dialog.close();
       }
     })
